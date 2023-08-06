@@ -77,7 +77,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'mydb',
-        'USER': 'user',
+        'USER': 'joey',
         'PASSWORD': 'yourpassword',
         'HOST': 'your-rds-endpoint',
         'PORT': '5432',
