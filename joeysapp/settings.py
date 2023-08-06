@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!km8kd8qu)6r@b7)4$)a27eu45q&s(vtnwum!wehy03o18^a*h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'joeysapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydb',
+        'USER': 'user',
+        'PASSWORD': 'yourpassword',
+        'HOST': 'your-rds-endpoint',
+        'PORT': '5432',
     }
 }
 
