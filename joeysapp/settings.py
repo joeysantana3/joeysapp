@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'mydb',
         'USER': 'joey',
         'PASSWORD': 'yourpassword',
-        'HOST': 'your-rds-endpoint',
+        'HOST': 'mydb.ctu3jmoi44bv.us-west-1.rds.amazonaws.com:5432',
         'PORT': '5432',
     }
 }
