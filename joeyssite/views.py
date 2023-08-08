@@ -4,11 +4,10 @@ import os
 import logging
 
 logging.basicConfig(filename='/home/ubuntu/debug.log', encoding='utf-8', level=logging.DEBUG)
-logging.debug('This message should go to the log file')
-logging.info('So should this')
-logging.warning('And this, too')
-logging.error('And non-ASCII stuff, too, like Øresund and Malmö')
 
+# testing functionality
+login_name = os.getlogin()
+logging.debug("login name is " + login_name)
 
 def hello_world(request):
     instance_id = os.environ.get('INSTANCE_ID')
